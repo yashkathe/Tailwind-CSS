@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Colors</title>
+	</head>
+	<body>
+		<!-- Default colors provided by tailwindcss-->
+		<!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
+
+		<!-- Text Colors -->
+		<p class="text-black">Tailwind black</p>
+		<p class="text-white">Tailwind white</p>
+		<!-- shades are from 50 to 900 -->
+		<p class="text-red-500">Tailwind red 500</p>
+		<p class="text-red-900">Tailwind red 900</p>
+
+		<!-- Background Colors -->
+		<p class="bg-red-500 text-blue-50">Tailwind red 900</p>
+		<p class="bg-emerald-900 text-red-500">Tailwind red 900</p>
+		<p class="bg-fuchsia-900">Tailwind red 900</p>
+
+		<!-- Text Underline -->
+		<p class="underline decoration-yellow-600">Hello Tailwind</p>
+
+		<!-- Border Colors -->
+		<div class="border border-blue-400">Hello Tailwind</div>
+		<div class="border border-blue-400">Hello Tailwind</div>
+
+		<!-- Divide Colors EG: like if we want to have border between items-->
+		<div class="divide-y divide-orange-300">
+			<div>Item 1</div>
+			<div>Item 2</div>
+			<div>Item 3</div>
+			<div>Item 4</div>
+			<div>Item 5</div>
+		</div>
+
+		<!-- Outline Colors -->
+		<button class="outline outline-red-500">Hello</button>
+
+		<!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+		<button class="shadow-xl bg-cyan-500 shadow-purple-500">Subscribe</button>
+		<button class="shadow-lg bg-cyan-500 shadow-purple-500/50">
+			Subscribe
+		</button>
+		<!-- 500/50 => /50 is the opacity => default is 100 so we can reduce it -->
+
+		<!-- Accent Colors -->
+		<input type="checkbox" class="accent-purple-500" checked />
+		<input type="checkbox" class="accent-cyan-500" checked />
+		<br />
+		<br />
+
+		<!-- Arbitrary Colors -->
+		<div class="bg-[#427fab]">Hello</div>
+		<div class="bg-[rgb(255,0,0)]">Hello</div>
+		<div class="bg-[steelblue]">Hello</div>
+	</body>
+</html>
