@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>TailwindCSS</title>
+	</head>
+	<body>
+		<!-- Positioning -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500">
+			<p>Parent Element</p>
+			<div class="absolute bottom-0 right-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Top left corner -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute top-0 left-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Top right corner -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute top-0 right-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Bottom left corner -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute bottom-0 left-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Bottom right corner -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute bottom-0 right-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Span top edge -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute top-0 inset-x-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Span left edge -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute inset-y-0 left-0 w-fit bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Span right edge -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute inset-y-0 right-0 w-fit bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Span bottom edge -->
+		<div class="relative h-12 w-1/2 bg-red-300 text-black-500 text-center">
+			<p>Parent Element</p>
+			<div class="absolute inset-x-0 bottom-0 bg-red-500 text-black-500">
+				Absolute Child Element
+			</div>
+		</div>
+		<br />
+
+		<!-- Display Classes -->
+		<div class="">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim
+			<span class="inline text-red-500"
+				>THIS IS INLINE (Dont go all the way across)</span
+			>
+			nisi sequi cumque officiis quas temporibus perferendis, assumenda iste
+			quos inventore delectus dolorem impedit doloribus repellat incidunt nulla,
+			<span class="inline-block text-red-500">This is inline block</span> animi
+			voluptas, suscipit exercitationem iure. Fuga rerum illum libero
+			<span class="block text-red-500">This is block</span>sequi ex alias
+			corporis explicabo deserunt quas cumque placeat impedit totam,
+			<span class="hidden text-red-500">This is hidden</span>sapiente ipsa magni
+			animi est dignissimos nesciunt corrupti perferendis deleniti. Vitae.
+		</div>
+		<br />
+
+		<!-- Z-Index -->
+		<div class="relative h-56 text-red-200">
+			<div class="absolute left-10 w-24 h-24 bg-blue-500 z-40">1</div>
+			<div class="absolute left-20 w-24 h-24 bg-blue-600">2</div>
+			<div class="absolute left-40 w-24 h-24 bg-blue-700 z-10">3</div>
+			<div class="absolute left-60 w-24 h-24 bg-blue-800">4</div>
+			<div class="absolute left-80 w-24 h-24 bg-blue-900">5</div>
+		</div>
+		<br />
+
+		<!-- Floats -->
+		<div class="w-1/2">
+			<img
+				class="h-40 w-40 float-left m-4"
+				alt=""
+				src="../assets/img/img3.jpg" />
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores saepe
+				odio asperiores ea iste, minus, corporis quam molestias in dicta nostrum
+				commodi cupiditate eius cumque voluptatibus optio quisquam culpa earum.
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+				eveniet eius quibusdam ex minima porro quos maiores praesentium magnam.
+				Nobis, veritatis deleniti. Impedit beatae ratione, in sequi dolores eum
+				architecto! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Molestiae quis aut facere nisi temporibus voluptas debitis ad labore
+				voluptatibus rerum id vero dolorum, mollitia recusandae aspernatur
+				nesciunt voluptate unde! Facere!
+			</p>
+		</div>
+		<br />
+	</body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
