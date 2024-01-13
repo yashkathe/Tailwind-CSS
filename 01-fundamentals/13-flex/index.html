@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Flex</title>
-  </head>
-  <body>
-    <!-- Flex and alignment -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Flex</title>
+	</head>
+	<body>
+		<!-- Flex and alignment -->
+		<div class="flex flex-col items-center h-auto w-full bg-gray-500">
+			<div class="p-10 border rounded-xl px-8 py-4 m-10 inline w-auto bg-gray-200 shadow-md shadow-black">1</div>
+			<div class="p-10 border rounded-xl px-8 py-4 m-10 inline w-auto bg-gray-200 shadow-md shadow-black">2</div>
+			<div class="p-10 border rounded-xl px-8 py-4 m-10 inline w-auto bg-gray-200 shadow-md shadow-black">3</div>
+			<div class="p-10 border rounded-xl px-8 py-4 m-10 inline w-auto bg-gray-200 shadow-md shadow-black">4</div>
+			<div class="p-10 border rounded-xl px-8 py-4 m-10 inline w-auto bg-gray-200 shadow-md shadow-black">5</div>
+		</div>
+        <br/>
 
-    <!-- Flex Column, Gap and Order -->
+		<!-- Flex Column, Gap and Order -->
+        <div class="flex flex-col gap-10 items-center h-auto w-full bg-gray-600">
+			<div class="p-10 order-5 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">1</div>
+			<div class="p-10 order-4 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">2</div>
+			<div class="p-10 order-3 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">3</div>
+			<div class="p-10 order-2 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">4</div>
+			<div class="p-10 order-1 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">5</div>
+		</div>
+        <br/>
 
-    <!-- Grow and shrink -->
-  </body>
+		<!-- Grow and shrink -->
+        <div class="flex flex-wrap gap-10 items-center h-auto w-full bg-gray-700">
+			<div class="p-10 order-5 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">1</div>
+			<div class="p-10 order-4 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">2</div>
+			<div class="p-10 order-3 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">3</div>
+			<div class="p-10 order-2 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">4</div>
+			<div class="p-10 order-1 border rounded-xl px-8 py-4 inline w-auto bg-gray-200 shadow-md shadow-black">5</div>
+		</div>
+	</body>
 </html>
 
 <!-- Justify Content
@@ -26,11 +49,11 @@
     -->
 
 <!-- 
-      items-start	align-items: flex-start;
-      items-end	align-items: flex-end;
-      items-center	align-items: center;
-      items-baseline	align-items: baseline;
-      items-stretch	align-items: stretch;
+      items-start	           align-items: flex-start;
+      items-end	               align-items: flex-end;
+      items-center	           align-items: center;
+      items-baseline	       align-items: baseline;
+      items-stretch	           align-items: stretch;
      -->
 
 <!-- Flex Direction
